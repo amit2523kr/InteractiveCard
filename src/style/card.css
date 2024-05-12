@@ -1,0 +1,250 @@
+
+/* Design for laptop view */
+.container {
+    display: flex;
+    /* justify-content: space-between; */
+  }
+  
+.name{
+    position: 'absolute';
+    bottom: '10px';
+    left: '10px';
+    color: 'white';
+    background-color: 'rgba(0, 0, 0, 0.5)';
+    padding: '10px';
+}
+
+label{
+    padding-bottom: 3rem;
+    font-size:1.6rem;
+}
+.card-form {
+    display: flex;
+    flex-direction: column;
+    width: 20rem;
+    margin: auto;
+    padding: 1rem;
+    margin-top:14rem;
+    margin-left:25rem;
+  }
+  label{
+    font-size: small;
+    font-weight:bold;
+    color:rgb(26, 26, 128);
+    padding-bottom: 0.8rem;
+  }
+  .form-input {
+    margin-bottom: 10px;
+    padding: 10px;
+    width:18rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  .form-input-date {
+    margin-bottom: 0.3rem;
+    padding: 10px;
+    width:4rem;
+    margin-left:0.3rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  .form-input-cvv {
+    margin-bottom: 10px;
+    padding: 10px;
+    width:7rem;
+    margin-left:0.3rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  .form-button {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .form-button:hover {
+    background-color: #0056b3;
+  }
+  .flex-container {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .flex-container > label {
+    flex: 1;
+  }
+
+  .front-image-container{
+    position: relative;
+    transform: translate(-20rem);
+  }
+  .back-image-container{
+    position: relative;
+    /* transform: translate(-20rem); */
+  }
+  .front{
+    position:absolute;
+    /* transform: translateX(-20rem); */
+    margin-top:9rem;
+    /* z-index: 1; */
+}
+.back{
+    position:absolute;
+    transform: translateX(5rem);
+    margin-top:27rem;
+    /* z-index: 1; */
+}
+.logo{
+    position: absolute;
+    top: 10rem;
+    left: 2rem;
+}
+  /* .image-container img {
+    width: 100%;
+    height: auto;
+  } */
+  .card-number {
+    position: absolute;
+    top: 14.5rem;
+    left: 2rem;
+    /* transform: translate(-50%, -50%); */
+    color: white;
+    justify-content: space-around;
+    font-size: xx-large;
+    white-space: nowrap;
+   
+  }
+  .cardholder-name {
+    position: absolute;
+    top: 19rem;
+    left: 2rem;
+    /* transform: translate(-50%, -50%); */
+    color: white;
+    white-space: nowrap; 
+  }
+  .exp-date{
+    position: absolute;
+    top: 19rem;
+    left: 19rem;
+    /* transform: translate(-50%, -50%); */
+    color: white;
+    white-space: nowrap; 
+  }
+  .cvv{
+    position: absolute;
+    top: 33rem;
+    left: 26rem;
+    /* transform: translate(-50%, -50%); */
+    color: white;
+    white-space: nowrap; 
+  }
+  .success{
+    height:4rem;
+    width:4rem;
+    margin-left:8.2rem;
+  }
+  .card-form h1,p{
+    text-align: center;
+  }
+.error{
+    color:red;
+    text-align: start;
+}
+/* Design for mobile view */
+@media only screen and (max-width: 480px) {
+    .container {
+      flex-direction: column;
+      
+    }
+    .maindekstop{
+        width:100%;
+        height:17rem;
+    }
+    .card-form {
+      width: 90%;
+      margin-top: 4rem;
+      margin-left: 1rem;
+    }
+    .flex-container {
+        flex-direction: row;
+        justify-content: start;
+      }
+    .form-input {
+      width: 90%;
+      font-size: large;
+    }
+    .form-input-date{
+        width:3.7rem;
+    } 
+    .form-input-cvv{
+        width:9rem;
+    }
+    
+  
+    .front-image-container, .back-image-container {
+      transform: translate(0);
+    }
+  
+    .front {
+      margin-top: -8rem;
+      width: 19rem;
+     margin-left: 1.6rem;
+     position: relative;
+     z-index: 1;
+    }
+  
+    .back {
+      /* transform: translateX(0); */
+      /* margin-top: 10rem; */
+      position: absolute;
+      margin-top: -16.6rem;
+      width: 19rem;
+     margin-left: 1.3rem;
+     z-index: 1;
+    }
+   .logo{
+    position: absolute;
+    margin-top: -16.9rem;
+    z-index: 1;
+    height: 2rem;
+    margin-left: 0.8rem;
+   }
+   .card-number {
+    top: -3.2rem;
+    z-index: 1;
+    font-size: large;
+    margin-left: 0.8rem;
+}
+  
+    .cardholder-name {
+        top: -0.7rem;
+        z-index: 1;
+        margin-left: 0.8rem;
+    }
+  
+    .exp-date {
+        top: -0.7rem;
+        left: 16rem;
+        /* color: black; */
+        z-index: 1;
+        /* font-size: large; */
+    }
+  
+    .cvv {
+        top: -13rem;
+        left: 20.5rem;
+        z-index: 1;
+        /* color: black; */
+    }
+  
+    .success {
+      margin-left: 9.4rem;
+    }
+    .form-button{
+        width:96%;
+    }
+  }
+  
